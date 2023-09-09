@@ -1,11 +1,11 @@
 [![Gitter](https://badges.gitter.im/plvicente-ringsce/community.svg)]
 (https://gitter.im/plvicente-ringsce/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-#  ringsce editor
-This is an editor written with lazarus ide and free pascal. Where you can use for openkrown repo to build the engine
+#  ringsce morpheus
+This is an engine written with c and C++. Where you can use for sharing the files internally. 
 
 ## Our Goals
-Our goal for this project is to deliver an open source library for JSON, XML, and database for the openkrown engine.
+Our goal for this project is to deliver an open source F2F for sharing on our own companies.
 
 ## Database goals
 
