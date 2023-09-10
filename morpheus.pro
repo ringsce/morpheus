@@ -13,6 +13,7 @@ SOURCES += \
     mainwindow.cpp \
 
 HEADERS += \
+    db.h \
     mainwindow.h
 
 FORMS += \
@@ -27,4 +28,5 @@ SUBDIRS += \
 
 DISTFILES += \
     CMakeLists.txt \
+    License.txt \
     libs/updater/CMakeLists.txt

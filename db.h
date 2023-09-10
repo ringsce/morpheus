@@ -21,18 +21,25 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#ifndef DB_H
+#define DB_H
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-}
+void db_init( int *ptr, char *ntr); // db init
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
+void db_update(); // db update
 
+void db_create(); // db create
+
+void db_repeat(); // db repeat
+
+void db_delete(); //db delete
+
+
+/*
+ * here you wil find the functions to manipulate
+ * the databases from the engine
+ * this is the main file header for that
+
+*/
+
+#endif // DB_H
