@@ -9,15 +9,16 @@ CONFIG += c++17 sdk_no_version_check
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-     main.cpp \
-    mainwindow.cpp \
+    src/db.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp
 
 HEADERS += \
-    db.h \
-    mainwindow.h
+    src/db.h \
+    src/mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    src/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
