@@ -10,3 +10,8 @@ project (morpheus)
 add_subdirectory (Hello)
 add_subdirectory (Demo)
 
+qt_add_executable(morpheus)
+if(APPLE)
+        set_target_properties(tst_manual_ios_assets PROPERTIES MACOSX_BUNDLE TRUE)
+endif()
+
