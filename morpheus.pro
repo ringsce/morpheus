@@ -9,15 +9,18 @@ CONFIG += c++17 sdk_no_version_check
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x040000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    src/secWindow.cpp \
     src/db.cpp \
     src/main.cpp \
     src/mainwindow.cpp
 
 HEADERS += \
     src/db.h \
-    src/mainwindow.h
+    src/mainwindow.h \
+    src/secwindow.h
 
 FORMS += \
+    src/secWindow.ui \
     src/mainwindow.ui
 
 # Default rules for deployment.
@@ -31,3 +34,6 @@ DISTFILES += \
     CMakeLists.txt \
     License.txt \
     libs/updater/CMakeLists.txt
+
+RESOURCES += \
+    resources.qrc
