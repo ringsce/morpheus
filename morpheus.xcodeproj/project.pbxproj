@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		5E618435888B9D49F8540165 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Qmake";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/ -f morpheus.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = "0";
+		};
+		126944923BD19E46B1B27CA4 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/db/db.cpp";
+			name = "db.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		48816364653DC589FEABA681 = {
+			fileRef = "126944923BD19E46B1B27CA4";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		3E07506292B8AA683F277D5A = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/db/isam.cpp";
+			name = "isam.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A86AA6E5E428444A3ACE4034 = {
+			fileRef = "3E07506292B8AA683F277D5A";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4EFD1E39304C628D1ECFDE59 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/main.cpp";
+			name = "main.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		EE33EA89F97478644ADF62BF = {
+			fileRef = "4EFD1E39304C628D1ECFDE59";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		B413CA16B44F8E8D4EDE3AAC = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/mainwindow.cpp";
+			name = "mainwindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		3BEC3A45E88B575A3E2AD8ED = {
+			fileRef = "B413CA16B44F8E8D4EDE3AAC";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		4749931F771A12278D05B5F6 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qrc_resources.cpp";
+			name = "qrc_resources.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		05762791D600A091F326A79D = {
+			fileRef = "4749931F771A12278D05B5F6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		7043BF7B06E589EB1648865C = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/moc_mainwindow.cpp";
+			name = "moc_mainwindow.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		523C2562D1F7677265641A7C = {
+			fileRef = "7043BF7B06E589EB1648865C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FCA68DF36D08CAA3F50006D9 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/ui_mainwindow.h";
+			name = "ui_mainwindow.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		60ED6DAFE06A7BAEB0775263 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/db/db.h";
+			name = "db.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		773861AFFD2F6801D1A2C7F3 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/db/isam.h";
+			name = "isam.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		F5AF3234235B0CA817189B5C = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/mainwindow.h";
+			name = "mainwindow.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		0C43B26FB9390C4754EB6CF9 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/resources.qrc";
+			name = "resources.qrc";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		D394D0CD00C150FE54765C37 = {
+			fileRef = "0C43B26FB9390C4754EB6CF9";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		CA49A974F655E6E830885B2C = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/opt/anaconda3/mkspecs/features/data/dummy.cpp";
+			name = "dummy.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B065AB9682FE9E3BD2D49A05 = {
+			fileRef = "CA49A974F655E6E830885B2C";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		FE5E3C3FB3C4654562101182 = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/src/mainwindow.ui";
+			name = "mainwindow.ui";
+			sourceTree = "<absolute>";
+		};
+		19AAA7C48BFC7F32204644FB = {
+			fileRef = "FE5E3C3FB3C4654562101182";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		12DE329E44050256DE4F6BAB = {
+			isa = PBXFileReference;
+			path = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/morpheus.pro";
+			name = "morpheus.pro";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "text";
+		};
+		25B08E2869634E9BCBA333A2 = {
+			isa = PBXGroup;
+			children = (
+				"4749931F771A12278D05B5F6",
+				"7043BF7B06E589EB1648865C",
+				"FCA68DF36D08CAA3F50006D9");
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		FB3C908FA6A710AAAE4CE3AA = {
+			isa = PBXGroup;
+			children = (
+				"FE5E3C3FB3C4654562101182");
+			name = "src";
+			sourceTree = "<group>";
+		};
+		921315FAA7F261D737F4F4C7 = {
+			isa = PBXGroup;
+			children = (
+				"E06A35D9625E683662BAA4B7",
+				"4EFD1E39304C628D1ECFDE59",
+				"B413CA16B44F8E8D4EDE3AAC",
+				"F5AF3234235B0CA817189B5C");
+			name = "src";
+			sourceTree = "<group>";
+		};
+		E06A35D9625E683662BAA4B7 = {
+			isa = PBXGroup;
+			children = (
+				"126944923BD19E46B1B27CA4",
+				"3E07506292B8AA683F277D5A",
+				"60ED6DAFE06A7BAEB0775263",
+				"773861AFFD2F6801D1A2C7F3");
+			name = "db";
+			sourceTree = "<group>";
+		};
+		87DF60DE337FB58864343E39 = {
+			isa = PBXGroup;
+			children = (
+				"0C43B26FB9390C4754EB6CF9");
+			name = "Resources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 = {
+			isa = PBXGroup;
+			children = (
+				"921315FAA7F261D737F4F4C7");
+			name = "Sources";
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 = {
+			isa = PBXGroup;
+			children = (
+				"CA49A974F655E6E830885B2C");
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		12E908B8A1C3C07C115504F5 = {
+			isa = PBXGroup;
+			children = (
+				"FB3C908FA6A710AAAE4CE3AA");
+			name = "Sources [uic]";
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 = {
+			isa = PBXGroup;
+			children = (
+				"12DE329E44050256DE4F6BAB");
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF0942E79C014DCEC8976BC = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Qt Preprocessors";
+			shellPath = "/bin/sh";
+			shellScript = "make -C /Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/ -f morpheus.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = "0";
+		};
+		F7E50F631C51CD5B5DC0BC43 = {
+			buildActionMask = 2147483647;
+			files = (
+				"48816364653DC589FEABA681",
+				"A86AA6E5E428444A3ACE4034",
+				"EE33EA89F97478644ADF62BF",
+				"3BEC3A45E88B575A3E2AD8ED",
+				"05762791D600A091F326A79D",
+				"523C2562D1F7677265641A7C",
+				"B065AB9682FE9E3BD2D49A05");
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources";
+		};
+		E298C74946306F53F5678158 = {
+			isa = PBXFileReference;
+			name = "Qt5Widgets";
+			path = "/Users/pedro/opt/anaconda3/lib/libQt5Widgets$(QT_LIBRARY_SUFFIX).5.9.7.dylib";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D792FC016C134D79AA50E6D7 = {
+			fileRef = "E298C74946306F53F5678158";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		2B774D8E4178765CE52EAAF5 = {
+			isa = PBXFileReference;
+			name = "DiskArbitration.framework";
+			path = "/System/Library/Frameworks/DiskArbitration.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		A99B2AA0F9CBBDD12BA126A4 = {
+			fileRef = "2B774D8E4178765CE52EAAF5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A1A67BEAA744704B29168D39 = {
+			isa = PBXFileReference;
+			name = "IOKit.framework";
+			path = "/System/Library/Frameworks/IOKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8D267F2E4776F0ECA2F49DC8 = {
+			fileRef = "A1A67BEAA744704B29168D39";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		72250F857412955C71D9C548 = {
+			isa = PBXFileReference;
+			name = "Qt5Gui";
+			path = "/Users/pedro/opt/anaconda3/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).5.9.7.dylib";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		D55528ACF16A121025835C52 = {
+			fileRef = "72250F857412955C71D9C548";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BC74F7C6339A3BD38829F9CC = {
+			isa = PBXFileReference;
+			name = "Qt5Core";
+			path = "/Users/pedro/opt/anaconda3/lib/libQt5Core$(QT_LIBRARY_SUFFIX).5.9.7.dylib";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		9F0B2E7944768E25433E203A = {
+			fileRef = "BC74F7C6339A3BD38829F9CC";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		D4B32C2222F82AC56BADEB21 = {
+			isa = PBXFileReference;
+			name = "OpenGL.framework";
+			path = "/System/Library/Frameworks/OpenGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		8771A8C96E9C391044035D99 = {
+			fileRef = "D4B32C2222F82AC56BADEB21";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D9815BDB5BD9F90D2BC05C5 = {
+			isa = PBXFileReference;
+			name = "AGL.framework";
+			path = "/System/Library/Frameworks/AGL.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+			lastKnownFileType = "wrapper.framework";
+		};
+		E45E51A644D5FC9F942ECE55 = {
+			fileRef = "8D9815BDB5BD9F90D2BC05C5";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		AF39DD055C3EF8226FBE929D = {
+			children = (
+				"E298C74946306F53F5678158",
+				"2B774D8E4178765CE52EAAF5",
+				"A1A67BEAA744704B29168D39",
+				"72250F857412955C71D9C548",
+				"BC74F7C6339A3BD38829F9CC",
+				"D4B32C2222F82AC56BADEB21",
+				"8D9815BDB5BD9F90D2BC05C5");
+			isa = PBXGroup;
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		D1C883685E82D5676953459A = {
+			buildActionMask = 2147483647;
+			files = (
+				"D792FC016C134D79AA50E6D7",
+				"A99B2AA0F9CBBDD12BA126A4",
+				"8D267F2E4776F0ECA2F49DC8",
+				"D55528ACF16A121025835C52",
+				"9F0B2E7944768E25433E203A",
+				"8771A8C96E9C391044035D99",
+				"E45E51A644D5FC9F942ECE55");
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Link Binary With Libraries";
+		};
+		30414803F31797EB689AE508 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Copy Bundle Resources";
+		};
+		99542592E9780B9225F24AA8 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F471C939F0B89D6FE57E0BE8 = {
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			explicitFileType = "wrapper.application";
+			path = "morpheus.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE0A091FDBFB3E9C31B7A1BD = {
+			children = (
+				"F471C939F0B89D6FE57E0BE8");
+			isa = PBXGroup;
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 = {
+			children = (
+				"2EB56BE3C2D93CDAB0C52E67",
+				"25B08E2869634E9BCBA333A2",
+				"87DF60DE337FB58864343E39",
+				"B8254625CFD509ED2A24A166",
+				"12E908B8A1C3C07C115504F5",
+				"74B182DB50CB5611B5C1C297",
+				"AF39DD055C3EF8226FBE929D",
+				"FE0A091FDBFB3E9C31B7A1BD");
+			isa = PBXGroup;
+			name = "morpheus";
+			sourceTree = "<group>";
+		};
+		C745D0EC38597B1017FC38DA = {
+			buildPhases = (
+				"5E618435888B9D49F8540165",
+				"7EF0942E79C014DCEC8976BC");
+			dependencies = (
+				);
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXAggregateTarget;
+			buildRules = (
+);
+			productName = "Qt Preprocess";
+			name = "Qt Preprocess";
+		};
+		56C6B40183CCAC684D78AE57 = {
+			isa = PBXTargetDependency;
+			target = "C745D0EC38597B1017FC38DA";
+		};
+		A670D3E190644249573459CF = {
+			buildPhases = (
+				"F7E50F631C51CD5B5DC0BC43",
+				"D1C883685E82D5676953459A",
+				"30414803F31797EB689AE508",
+				"99542592E9780B9225F24AA8");
+			dependencies = (
+				"56C6B40183CCAC684D78AE57");
+			productReference = "F471C939F0B89D6FE57E0BE8";
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+			isa = PBXNativeTarget;
+			buildRules = (
+);
+			productType = "com.apple.product-type.application";
+			name = "morpheus";
+			productName = "morpheus";
+		};
+		3AA6C32AC930069E80220CF1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64 i686";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "XJX8PUCD89";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_NAME = "morpheus";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus//.xcode";
+				CONFIGURATION_BUILD_DIR = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus//$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "11.0";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../opt/anaconda3/include/qt",
+					"../../../../opt/anaconda3/include/qt/QtWidgets",
+					"../../../../opt/anaconda3/include/qt/QtGui",
+					"../../../../opt/anaconda3/include/qt/QtCore",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					".",
+					"../../../../opt/anaconda3/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/pedro/opt/anaconda3/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x040000",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x040000",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-Wl,-rpath,/Users/pedro/opt/anaconda3/lib",
+						"-L/Users/pedro/opt/anaconda3/lib");
+				ARCHS = "x86_64 i686";
+			};
+			name = "Debug";
+		};
+		77418F46922677BB04ED38DD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64 i686";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "XJX8PUCD89";
+				ENABLE_BITCODE = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = "YES";
+				PRODUCT_NAME = "morpheus";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "morpheus";
+			};
+			name = "Debug";
+		};
+		339EE1B2CC4FC24589A0EA95 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64 i686";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "XJX8PUCD89";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_NAME = "morpheus";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				INFOPLIST_FILE = "Info.plist";
+				SYMROOT = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus//.xcode";
+				CONFIGURATION_BUILD_DIR = "/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus//$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "11.0";
+				HEADER_SEARCH_PATHS = (
+					".",
+					"../../../../opt/anaconda3/include/qt",
+					"../../../../opt/anaconda3/include/qt/QtWidgets",
+					"../../../../opt/anaconda3/include/qt/QtGui",
+					"../../../../opt/anaconda3/include/qt/QtCore",
+					".",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/AGL.framework/Headers",
+					".",
+					"../../../../opt/anaconda3/mkspecs/macx-clang");
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/pedro/opt/anaconda3/lib",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x040000",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DISABLE_DEPRECATED_BEFORE=0x040000",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB");
+				OTHER_LDFLAGS = (
+						"-stdlib=libc++",
+						"-headerpad_max_install_names",
+						"-Wl,-rpath,@executable_path/Frameworks",
+						"-Wl,-rpath,/Users/pedro/opt/anaconda3/lib",
+						"-L/Users/pedro/opt/anaconda3/lib");
+				ARCHS = "x86_64 i686";
+			};
+			name = "Release";
+		};
+		6666AA5E688052234F6758D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = "NO";
+				"ARCHS[sdk=macosx*]" = "x86_64 i686";
+				COPY_PHASE_STRIP = "NO";
+				DEVELOPMENT_TEAM = "XJX8PUCD89";
+				ENABLE_BITCODE = "NO";
+				PRODUCT_NAME = "morpheus";
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = "macosx";
+				PRODUCT_NAME = "morpheus";
+			};
+			name = "Release";
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"3AA6C32AC930069E80220CF1",
+				"339EE1B2CC4FC24589A0EA95");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6CC3B5D2136C7CD6A5CF5A59 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"77418F46922677BB04ED38DD",
+				"6666AA5E688052234F6758D8");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		6DB9C3763D02B1415CD9D565 = {
+			hasScannedForEncodings = 1;
+			compatibilityVersion = "Xcode 3.2";
+			isa = PBXProject;
+			mainGroup = "E8C543AB96796ECAA2E65C57";
+			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
+			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"A670D3E190644249573459CF",
+				"C745D0EC38597B1017FC38DA");
+			attributes = {
+				TargetAttributes = {
+				};
+			};
+		};
+	};
+	rootObject = "6DB9C3763D02B1415CD9D565";
+}
