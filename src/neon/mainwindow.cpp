@@ -161,7 +161,7 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::moveTorrentDown);
 
     // Load settings and start
-    setWindowTitle(tr("Torrent Client"));
+    setWindowTitle(tr("Neon Client")); // title
     setActionsEnabled();
     QMetaObject::invokeMethod(this, "loadSettings", Qt::QueuedConnection);
 }
@@ -387,7 +387,7 @@ void MainWindow::saveSettings()
     saveChanges = false;
 
     // Prepare and reset the settings
-    QSettings settings("QtProject", "Torrent");
+    QSettings settings("QtProject", "Torrent"); // settings
     settings.clear();
 
     settings.setValue("LastDirectory", lastDirectory);
@@ -579,7 +579,7 @@ void MainWindow::about()
 
     QLabel *text = new QLabel;
     text->setWordWrap(true);
-    text->setText("<p>The <b>Torrent Client</b> example demonstrates how to"
+    text->setText("<p>The <b>Neon Network Client</b> example demonstrates how to"
                   " write a complete peer-to-peer file sharing"
                   " application using Qt's network and thread classes.</p>"
                   "<p>This feature complete client implementation of"
@@ -606,7 +606,7 @@ void MainWindow::about()
 
     QDialog about(this);
     about.setModal(true);
-    about.setWindowTitle(tr("About Torrent Client"));
+    about.setWindowTitle(tr("About Neon Client"));
     about.setLayout(mainLayout);
 
     connect(quitButton, &QPushButton::clicked, &about, &QDialog::close);
