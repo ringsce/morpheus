@@ -27,7 +27,9 @@ SOURCES += main.cpp \
            trackerclient.cpp
 
 # Forms and resources
-FORMS += addtorrentform.ui
+FORMS += addtorrentform.ui \
+    addneonform.ui \
+    settings.ui
 RESOURCES += icons.qrc
 
 # install

@@ -25,7 +25,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <QApplication>
 
-#include <db.h>
+//#include <db/db.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

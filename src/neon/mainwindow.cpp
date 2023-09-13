@@ -100,6 +100,7 @@ MainWindow::MainWindow(QWidget *parent)
     fileMenu->addAction(pauseTorrentAction);
     fileMenu->addAction(removeTorrentAction);
     fileMenu->addSeparator();
+    //fileMenu ->addAction(settingsAction);
     fileMenu->addAction(QIcon(":/icons/exit.png"), tr("E&xit"), this, &MainWindow::close);
 
     // Help menu
@@ -579,13 +580,8 @@ void MainWindow::about()
 
     QLabel *text = new QLabel;
     text->setWordWrap(true);
-    text->setText("<p>The <b>Neon Network Client</b> example demonstrates how to"
-                  " write a complete peer-to-peer file sharing"
-                  " application using Qt's network and thread classes.</p>"
-                  "<p>This feature complete client implementation of"
-                  " the BitTorrent protocol can efficiently"
-                  " maintain several hundred network connections"
-                  " simultaneously.</p>");
+    text->setText("<p>The <b>Neon Network Client</b> is an p2p protocol client"
+                                   "</p>");
 
     QPushButton *quitButton = new QPushButton("OK");
 
