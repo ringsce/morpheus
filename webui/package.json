@@ -1,0 +1,14 @@
+{
+  "name": "morpheus-ui",
+  "version": "1.0.0",
+  "description": "webui for morpheus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mit"
+  ],
+  "author": "Pedro Dias Vicente",
+  "license": "MIT"
+}
