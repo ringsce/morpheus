@@ -79,14 +79,14 @@ target_link_libraries(neon PUBLIC
 
 # Resources:
 set(icons_resource_files
-    "icons/1downarrow.png"
-    "icons/1uparrow.png"
-    "icons/bottom.png"
-    "icons/exit.png"
-    "icons/peertopeer.png"
-    "icons/player_pause.png"
-    "icons/player_play.png"
-    "icons/player_stop.png"
+    "qt/icons/1downarrow.png"
+    "qt/icons/1uparrow.png"
+    "qt/icons/bottom.png"
+    "qt/icons/exit.png"
+    "qt/icons/peertopeer.png"
+    "qt/icons/player_pause.png"
+    "qt/icons/player_play.png"
+    "qt/icons/player_stop.png"
 )
 
 qt_add_resources(neon "icons"
