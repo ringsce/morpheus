@@ -4,6 +4,8 @@ project(neon LANGUAGES CXX)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GTK4 REQUIRED IMPORTED_TARGET gtk4)
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Network Widgets)
 
 # The MACOSX_BUNDLE_ICON_FILE variable is added to the Info.plist
@@ -44,6 +46,7 @@ target_link_libraries(neon PUBLIC
     Qt::Gui
     Qt::Network
     Qt::Widgets
+    PkgConfig::GTK4
 )
 
 # Resources:
