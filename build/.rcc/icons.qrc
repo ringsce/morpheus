@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="qt/icons/1downarrow.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/1downarrow.png</file>
+    <file alias="qt/icons/1uparrow.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/1uparrow.png</file>
+    <file alias="qt/icons/bottom.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/bottom.png</file>
+    <file alias="qt/icons/exit.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/exit.png</file>
+    <file alias="qt/icons/peertopeer.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/peertopeer.png</file>
+    <file alias="qt/icons/player_pause.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/player_pause.png</file>
+    <file alias="qt/icons/player_play.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/player_play.png</file>
+    <file alias="qt/icons/player_stop.png">/Users/pedro/Documents/Projects/ringsce-morpheus/morpheus/qt/icons/player_stop.png</file>
+  </qresource>
+</RCC>
+
