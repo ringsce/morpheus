@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebUI Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>WebUI Example</h1>
+    <p>This is a simple example of a web UI.</p>
+    <button id="settingsBtn">Open Settings</button>
+</div>
+
+<script>
+    // JavaScript code to handle button click event
+    document.getElementById("settingsBtn").addEventListener("click", function() {
+        // Send a message to the backend to open settings window
+        // You can implement this part according to your application's needs
+        // For example, you might use AJAX to send a request to your server
+        alert("Open settings window"); // For demonstration purpose
+    });
+</script>
+</body>
+</html>
