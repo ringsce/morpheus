@@ -26,21 +26,18 @@ if(APPLE)
     # macOS specific settings
     # For example, you can add macOS specific flags or libraries here
     add_subdirectory(webui) # Add webui folder to build
-    #add_subdirectory(webui/cpp-httplib) # Add cpp-httplib library to build
-
+    
 
 elseif(UNIX AND NOT APPLE)
     # Linux specific settings
     # For example, you can add Linux specific flags or libraries here
     add_subdirectory(webui) # Add webui folder to build
-    #add_subdirectory(webui/cpp-httplib) # Add cpp-httplib library to build
-
+    
 
 elseif(WIN32)
     # Windows specific settings
     # For example, you can add Windows specific flags or libraries here
     add_subdirectory(webui) # Add webui folder to build
-    #add_subdirectory(webui/cpp-httplib) # Add cpp-httplib library to build
-
+    
 
 endif()
