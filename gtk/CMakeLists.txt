@@ -1,5 +1,5 @@
 # Set the name and the supported language of the project
-project(neon)
+project(neon-gtk)
 # Set the minimum version of cmake required to build this project
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
