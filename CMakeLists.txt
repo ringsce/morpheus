@@ -29,10 +29,18 @@ if(APPLE)
     message(STATUS "Configuring for macOS")
     # macOS specific configurations
     # You can set macOS specific variables or settings here
+    add_subdirectory(webui) # Add webui folder to build
+    add_subdirectory(core) # Add core folder to build
+    add_subdirectory(player) # Add player folder to build
+    
 elseif(UNIX AND NOT APPLE)
     message(STATUS "Configuring for Linux")
     # Linux specific configurations
     # You can set Linux specific variables or settings here
+    add_subdirectory(webui) # Add webui folder to build
+    add_subdirectory(core) # Add core folder to build
+    add_subdirectory(player) # Add player folder to build
+    
 elseif(WIN32)
     message(STATUS "Configuring for Windows")
     # Windows specific configurations

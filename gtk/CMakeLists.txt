@@ -26,12 +26,16 @@ if(APPLE)
     # macOS specific settings
     # For example, you can add macOS specific flags or libraries here
     add_subdirectory(webui) # Add webui folder to build
+    add_subdirectory(core) # Add core folder to build
+    add_subdirectory(player) # Add player folder to build
     
 
 elseif(UNIX AND NOT APPLE)
     # Linux specific settings
     # For example, you can add Linux specific flags or libraries here
     add_subdirectory(webui) # Add webui folder to build
+    add_subdirectory(core) # Add core folder to build
+    add_subdirectory(player) # Add player folder to build
     
 
 elseif(WIN32)
