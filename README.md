@@ -1,25 +1,88 @@
 [![Gitter](https://badges.gitter.im/plvicente-ringsce/community.svg)](https://gitter.im/plvicente-ringsce/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-# Morpheus by Kreatyve Designs
-Morpheus is an open-source application written in C and C++ for sharing and downloading ebooks officially from Kreatyve Designs.
 
-## Our Goals
-Our goal for this project is to deliver a robust and open-source F2F platform for sharing and downloading ebooks within our community.
+# Morpheus: The Update Engine & Application for RingsCE
 
-## Database Goals
-Our database goals include creating a library capable of working with JSON and XML to efficiently manage ebook metadata and content.
+**Morpheus** is the official open-source update engine and management application for the [RingsCE](https://ringscejs.gleentech.com) platform — a modern operating system tailored for **Linux ARM64** and **macOS ARM64 (Silicon)** devices.
 
-## Parser and Reader
-We provide a parser and reader for processing the data within the ebook files. This library, located inside the 'data-dir' folder, allows users to manipulate data from the zip content folder.
+---
 
-## Web UI
-Morpheus also comes with a web-based user interface, accessible via localhost, where users can manage their ebooks, view their library, and perform various actions conveniently.
+## 🚀 What is Morpheus?
 
-## Contributions
-Everyone is welcome to contribute to the project. Fork the repository and start contributing to make Morpheus even better.
+Morpheus is both an **engine** and a **user-facing application** designed to:
 
-## Contact Us
-Feel free to contact us here or chat with us on Discord: plvicente.
+- Deliver and apply software updates for RingsCE apps and the system itself.
+- Provide a local web-based UI for managing applications, content, and system updates.
+- Integrate tightly with `data-dir` to manage ebook libraries, archive content, and runtime metadata.
+
+---
+
+## ✨ Key Features
+
+### ✅ Cross-Platform (ARM64)
+- Native support for **Linux ARM64** (e.g., Raspberry Pi, Odroid, Pine64).
+- Optimized for **macOS Silicon** (M1/M2/M3).
+
+### 📚 Ebook & Archive Reader
+- Parse and manage `.zip`-based ebook bundles located in `data-dir`.
+- Seamless JSON/XML metadata support.
+- Runtime extraction and manipulation of content without full unpacking.
+
+### 🧠 Update Engine
+- Handles application, module, and system updates.
+- Works offline and integrates with signed update manifests.
+- Minimal dependencies for lightweight environments.
+
+### 🌐 Web UI (localhost)
+- Local web interface to:
+  - Manage installed apps.
+  - Browse and launch content.
+  - Check for system and app updates.
+  - Control background downloads.
+- Runs on `http://localhost:8080` by default.
+
+---
+
+## 🗄️ Database Goals
+
+Morpheus includes an internal metadata and content indexing layer with:
+
+- JSON-first architecture.
+- Optional XML support for legacy data formats.
+- Scalability through in-memory and local-disk caching for large libraries.
+- Extensible backend adapter system for future integration with RingsCE Cloud or offline sync layers.
+
+---
+
+## 🛠️ Building Morpheus
+
+### Requirements
+- CMake >= 3.16
+- Qt6 (Core, Widgets, Network, Gui)
+- GTK (for Linux builds)
+- macOS 11.7+ for ARM64 or Linux ARM64 (glibc)
+
+### Build Instructions
+
+```bash
+git clone --recurse-submodules https://github.com/ringsce/morpheus.git
+cd morpheus
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+
+🤝 Contributing
+
+We love contributions! You can:
+
+Submit bug reports or feature requests.
+Fork and implement new features (e.g., better archive handling, themes).
+Improve localization, documentation, or web UI experience.
+📡 Community
+
+💬 Discord: plvicente
+🌐 Website: ringscejs.gleentech.com
+🧠 Org: github.com/ringsce
 
 ![Screenshot](RINGSCE_v2.png)
 

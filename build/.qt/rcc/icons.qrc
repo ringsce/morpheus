@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="icons/1downarrow.png">/Users/pedro/Projects/morpheus/icons/1downarrow.png</file>
+    <file alias="icons/1uparrow.png">/Users/pedro/Projects/morpheus/icons/1uparrow.png</file>
+    <file alias="icons/bottom.png">/Users/pedro/Projects/morpheus/icons/bottom.png</file>
+    <file alias="icons/exit.png">/Users/pedro/Projects/morpheus/icons/exit.png</file>
+    <file alias="icons/peer.png">/Users/pedro/Projects/morpheus/icons/peer.png</file>
+    <file alias="icons/player_pause.png">/Users/pedro/Projects/morpheus/icons/player_pause.png</file>
+    <file alias="icons/player_play.png">/Users/pedro/Projects/morpheus/icons/player_play.png</file>
+    <file alias="icons/player_stop.png">/Users/pedro/Projects/morpheus/icons/player_stop.png</file>
+  </qresource>
+</RCC>
+
