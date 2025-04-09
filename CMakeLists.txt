@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.29 FATAL_ERROR)
 
 if(POLICY CMP0092)
     cmake_policy(SET CMP0092 NEW)
@@ -27,28 +27,42 @@ set(CMAKE_AUTOUIC ON)
 # Detecting operating system
 if(APPLE)
     message(STATUS "Configuring for macOS")
-    # macOS specific configurations
-    # You can set macOS specific variables or settings here
-    add_subdirectory(webui) # Add webui folder to build
-    add_subdirectory(core) # Add core folder to build
-    add_subdirectory(player) # Add player folder to build
-    
+
+    # macOS specific configurations (ARM64 Silicon and Intel macOS)
+    if(APPLE AND CMAKE_SYSTEM_PROCESSOR MATCHES "arm64")
+        set(MACOS_SILICON TRUE)
+        message(STATUS "Configuring for macOS ARM64 (Silicon)")
+    else()
+        set(MACOS_SILICON FALSE)
+        message(STATUS "Configuring for Intel-based macOS")
+    endif()
+
 elseif(UNIX AND NOT APPLE)
     message(STATUS "Configuring for Linux")
-    # Linux specific configurations
-    # You can set Linux specific variables or settings here
-    add_subdirectory(webui) # Add webui folder to build
-    add_subdirectory(core) # Add core folder to build
-    add_subdirectory(player) # Add player folder to build
-    
-elseif(WIN32)
-    message(STATUS "Configuring for Windows")
-    # Windows specific configurations
-    # You can set Windows specific variables or settings here
+    # Linux ARM64 specific configurations
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
+        set(LINUX_ARM64 TRUE)
+        message(STATUS "Configuring for Linux ARM64")
+    endif()
+
+elseif(ANDROID)
+    message(STATUS "Configuring for Android")
+    # Android-specific settings can be handled here
+    set(ANDROID TRUE)
+
+elseif(IOS)
+    message(STATUS "Configuring for iOS")
+    # iOS-specific settings can be handled here
+    set(IOS TRUE)
+
+else()
+    message(STATUS "Unsupported platform")
 endif()
 
-# Add GTK folder
-add_subdirectory(gtk)
+# Add GTK folder (for Linux support)
+if(NOT ANDROID AND NOT IOS)
+    add_subdirectory(gtk)
+endif()
 
 # Find Qt6 components
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Network Widgets)
@@ -63,7 +77,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(C_WARNING_FLAGS)
 set(CXX_WARNING_FLAGS)
 
-# MACOSX_BUNDLE_ICON_FILE variable
+# macOS Bundle icon
 set(MACOSX_BUNDLE_ICON_FILE icon.icns)
 set(app_icon_macos "${CMAKE_CURRENT_SOURCE_DIR}/resources/icon.icns")
 set_source_files_properties(${app_icon_macos} PROPERTIES
@@ -84,12 +98,11 @@ qt_add_executable(neon
     qt/torrentclient.cpp qt/torrentclient.h
     qt/torrentserver.cpp qt/torrentserver.h
     qt/trackerclient.cpp qt/trackerclient.h
-    ${app_icon_macos} 
+    ${app_icon_macos}
 )
 
 # Set properties
 set_target_properties(neon PROPERTIES
-    WIN32_EXECUTABLE TRUE
     MACOSX_BUNDLE TRUE
 )
 
@@ -121,3 +134,22 @@ qt_add_resources(neon "icons"
     FILES
         ${icons_resource_files}
 )
+
+# Adjust settings for Android and iOS
+if(ANDROID)
+    # Add Android-specific settings here (Qt for Android, etc.)
+    message(STATUS "Configuring for Android")
+    set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/android.toolchain.cmake")
+    set(CMAKE_ANDROID_NDK "/path/to/your/ndk")
+    set(CMAKE_ANDROID_STL_TYPE "c++_static")
+    set(CMAKE_ANDROID_ARCH_ABI "arm64-v8a")
+    set(CMAKE_ANDROID_NATIVE_API_LEVEL 21)
+    set(CMAKE_ANDROID_SDK "/path/to/your/sdk")
+
+elseif(IOS)
+    # Add iOS-specific settings here (Qt for iOS, etc.)
+    message(STATUS "Configuring for iOS")
+    set(CMAKE_IOS_DEPLOYMENT_TARGET "11.0")
+    set(CMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "iPhone Developer")
+    set(CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "YOUR_TEAM_ID")
+endif()
