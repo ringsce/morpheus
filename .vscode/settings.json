@@ -1,0 +1,34 @@
+{
+    "files.associations": {
+      "*.ui": "xml",
+      "*.pro": "ini"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++", // macOS Silicon or Linux ARM64 clang
+    "C_Cpp.default.includePath": [
+      "${workspaceFolder}/**",
+      "/usr/include",
+      "/usr/local/include",
+      "/opt/homebrew/include",                      // For macOS Homebrew
+      "/opt/homebrew/opt/qt6/include",              // Qt6 include on macOS (Homebrew)
+      "/usr/include/x86_64-linux-gnu/qt6",          // Optional Linux Qt6 path
+      "/usr/include/aarch64-linux-gnu/qt6",         // Linux ARM64 specific
+      "/usr/local/opt/qt6/include",                 // Alternative Qt6 Homebrew prefix
+      "/Library/Developer/CommandLineTools/usr/include/c++/v1" // macOS C++ standard lib
+    ],
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Unix Makefiles",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.buildEnvironment": {
+      "CMAKE_PREFIX_PATH": "/opt/homebrew/opt/qt6" // Adjust for Linux if needed
+    },
+    "cmake.configureSettings": {
+      "CMAKE_CXX_STANDARD": "17",
+      "CMAKE_BUILD_TYPE": "Debug"
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.formatOnSave": true
+  }
+  

@@ -1,0 +1,113 @@
+name: Build Neon
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-macos:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Qt and dependencies
+        run: |
+          brew install qt6 ninja pkg-config
+
+      - name: Build (macOS ARM64)
+        run: |
+          mkdir build && cd build
+          cmake .. \
+            -DCMAKE_PREFIX_PATH="$(brew --prefix qt6)" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=11.7 \
+            -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchains/macos-silicon-toolchain.cmake \
+            -G Ninja
+          ninja
+
+  build-linux-arm64:
+    runs-on: ubuntu-latest
+    container:
+      image: debian:bullseye
+    steps:
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y cmake ninja-build build-essential g++ pkg-config qt6-base-dev
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build
+        run: |
+          mkdir build && cd build
+          cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
+          ninja
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Qt (vcpkg)
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: "${{ github.workspace }}/vcpkg"
+          vcpkgJsonGlob: "**/vcpkg.json"
+
+      - name: Configure & Build
+        run: |
+          mkdir build
+          cd build
+          cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake
+          ninja
+
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Android NDK and SDK
+        uses: android-actions/setup-android@v3
+        with:
+          sdk-version: 34
+          ndk-version: 25.2.9519653
+
+      - name: Install dependencies
+        run: sudo apt-get install -y ninja-build cmake unzip
+
+      - name: Build (Android ARM64)
+        run: |
+          mkdir build && cd build
+          cmake .. -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/cmake/toolchains/android.toolchain.cmake \
+            -DANDROID_ABI=arm64-v8a \
+            -DANDROID_PLATFORM=android-21
+          ninja
+
+  build-ios:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Qt and dependencies
+        run: |
+          brew install qt6 ninja
+
+      - name: Build (iOS ARM64)
+        run: |
+          mkdir build && cd build
+          cmake .. -G Xcode \
+            -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/cmake/toolchains/ios.toolchain.cmake \
+            -DCMAKE_OSX_SYSROOT=iphoneos \
+            -DCMAKE_OSX_ARCHITECTURES=arm64 \
+            -DCMAKE_IOS_DEPLOYMENT_TARGET=11.0
+          cmake --build . --config Release

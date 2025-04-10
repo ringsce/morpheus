@@ -59,7 +59,7 @@ CMakeLists.txt.user*
 *.opensdf
 *.vcxproj
 *vcxproj.*
-
+node_modules
 # MinGW generated files
 *.Debug
 *.Release
